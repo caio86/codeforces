@@ -21,7 +21,11 @@
             nil
             ruff
             pyright
-            (python3.withPackages (ps: with ps; [ ]))
+            python3
+            watchexec
+            clang-tools
+            just
+            gcc
           ];
         };
       });
