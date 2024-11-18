@@ -8,12 +8,7 @@ int getMax(const int a, const int b,const int c) {
   int o4 = (a+b)*c;
   int o5 = a+b+c;
 
-  int res = max(
-      max(o1, o2),
-      max(o3, o4)
-    );
-
-  return max(res, o5);
+  return max({o1, o2, o3, o4, o5});
 }
 
 void solve() {
